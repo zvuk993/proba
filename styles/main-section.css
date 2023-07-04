@@ -7,8 +7,29 @@
 
 .menu-section {
   font-size: 24px;
+  z-index: 100;
 }
 
 .player-section {
   padding: 10px 0 10px 0;
+  z-index: 110;
+}
+
+.background-picture {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  
+}
+
+.background-collor {
+  background-color: rgb(242, 210, 155);
+}
+
+body {
+  background-color: rgb(242, 210, 155);
 }
