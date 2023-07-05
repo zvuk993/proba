@@ -5,9 +5,11 @@
 
   position: fixed;
   height: 50px;
-  border-bottom: solid;
+  border-bottom: none;
   border-width: 1px;
-  left: 0;
+  border-color: rgba(232, 12, 12, 1);
+  
+  left: 180px;
   top: 0;
   right: 0;
 
@@ -15,22 +17,23 @@
 
 }
 
-.left-section {
-  width: 200px;
-  min-width: 2000px;
-}
-
 .webpage-title {
-  font-size: 38px;
+  font-size: 44px;
+  color: rgb(20, 1, 1);
+  min-width: 310px;
+  padding-top: 4px;
   padding-left: 10px;
 }
 
-.right-section {
-  width: 200px;
-  min-width: 200px
-}
-
-.logo {
-  font-size: 34px;
-  padding-right: 10px;
+.line {
+  color: rgb(1, 0, 0);
+  margin: 0;
+  border-width: 0;
+  border: solid 1px;
+  z-index: 1200;
+  position: relative;
+  top: 44px;
+  left: 180px;
+  box-shadow: 0 -2px 2px rgba(232, 12, 12, 0.4);
+  
 }

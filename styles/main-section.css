@@ -1,35 +1,45 @@
+body {
+  background-color: rgb(242, 210, 155);
+}
+
+
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 130px;
+  z-index: 500;
 }
 
 .menu-section {
-  font-size: 24px;
   z-index: 100;
+  
+}
+
+.menu-section-titles {
+  font-size: 26px;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .player-section {
-  padding: 10px 0 10px 0;
-  z-index: 110;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+  z-index: 1000;
 }
 
 .background-picture {
-  display: flex;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 10;
-  
+  z-index: 10;  
+  opacity: 0.8;
 }
 
-.background-collor {
-  background-color: rgb(242, 210, 155);
-}
 
-body {
-  background-color: rgb(242, 210, 155);
-}
+
