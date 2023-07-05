@@ -14,18 +14,25 @@
 
   <body>
     <header class="header">
-      <p class="webpage-title">Tamburica Radio</p></div>
+      <div class="title-container">
+        <p class="webpage-title">Tamburica</p>
+        <hr class="line">
+        <p class="webpage-title-two">Radio</p>
+
+      </div>
+
     </header>
 
-    <hr class="line">
+ 
 
     <div class="player-container">
       <div class="player-section">     
         <!--PLAYER - Блок расположения плеера. Плееры: default, lite, energy или custom (свой плеер) (можно несколько) -->
-        <div id="my_player" class="my_player" data-player="default" data-skin="" data-width=300 data-autoplay=1 data-volume=70 data-streamurl="https://myradio24.org/tamburica"></div>
+        <div id="my_player" class="my_player" data-player="adaptive" data-skin="" data-width=280 data-autoplay=1 data-volume=70 data-streamurl="https://myradio24.org/tamburica"></div>
         <!--END PLAYER-->
 
-
+        
+   
         <!--Этот скрипт должен располагаться в самом низу после всех блоков и не должен повторяться на странице. -->
         <script src="https://myradio24.com/player/player.js?v3.26" data-port="tamburica" data-interval=15 data-vmid=0></script>
       </div>
@@ -33,7 +40,7 @@
 
 
     <main>
-      <img class="background-picture" src="images/background.png">
+      <img class="background-picture" src="images/background-3.png">
       <section class="menu">
         <div class="menu-section">
           <p class="menu-section-titles">ŠKOLA TAMBURICE</p>
@@ -54,6 +61,10 @@
           <p class="menu-section-titles">TAMBURASKA ODMARALISTA</p>
         </div>
       </section>
+
+      <footer class="footer">
+
+      </footer>
       
 
     </main>
