@@ -27,10 +27,16 @@
 
     <div class="player-container">
       <div class="player-section">     
-        <!--PLAYER - Блок расположения плеера. Плееры: default, lite, energy или custom (свой плеер) (можно несколько) -->
-        <div id="my_player" class="my_player" data-player="adaptive" data-skin="" data-width=280 data-autoplay=1 data-volume=70 data-streamurl="https://myradio24.org/tamburica"></div>
-        <!--END PLAYER-->
-
+        <div id="my_player_custom" class="my_player" data-player="custom" data-streamurl="https://myradio24.org/tamburica""></div>
+ 
+        <div id="my_player_custom_html" style="display:none;" data-imagesurl="{'play':'https://myradio24.com/player/demo/play.png','pause':'https://myradio24.com/player/demo/pause.png'} ">
+        <div class="my_play" style="width:64px; height:64px; background-image:url('https://myradio24.com/player/demo/play.png'); cursor:pointer;">< /div>
+        <div class="my_timer" style="display:none; width:64px; font:26px Arial; color:#000000;">00:00</div>
+        <div class="my_volumediv" style="display:none; width:64px; height:16px; background:#303030; background-image:linear-gradient(#202020, #303030); border-radius:3px; cursor:pointer; text-align:left; user-select:none;">
+        <div class="my_volume" style="width:64px; height:16px; background:#cccccc; background-image:linear-gradient(#eeeeee, #aaaaaa); border-radius:3px;"></div>
+        </div>
+        <div class="my_loading" style="display:none; width:64px; font:16px Arial; color:#000000;"></div>
+        </div>
         
    
         <!--Этот скрипт должен располагаться в самом низу после всех блоков и не должен повторяться на странице. -->
