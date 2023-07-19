@@ -171,12 +171,12 @@ body {
 .u-svetu-tambure-grid,
 .tamburaske-noci-grid {
   display: grid;
-  padding: 14px 20px;
+  padding: 14px 30px;
   background: #ffffff;
   line-height: 1.6;
   font-size: 0.85em;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
   margin: 0 10px 0;
   
 }
@@ -264,8 +264,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 5px 10px 10px;
 }
-
-.tamburaske-noci
 
 .u-svetu-tambure-location {
   font-size: 18px;
