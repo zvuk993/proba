@@ -16,24 +16,23 @@
   <body>
     <!--HEADER-->
   
-      <div class="background-collor-song-info">providna slova</div>
-      <div class="player-section">
-
+      <div id="headercolor" class="background-collor-song-info">
         <!--INFOS - Информация о радио -->
         <div class="song-info-container">
           <p class="song-info" data-myinfo="song"></p>
         </div>
+         <!--END INFOS-->
+      </div>
 
-
-   
-    
+      
     <header class="header">
       <div class="player-section">
-
-        
-        <!--END INFOS-->
-
         <div class="player-and-title-container">
+           <!--INFOS - Информация о радио -->
+          <div class="song-info-container1">
+            <p class="song-info" data-myinfo="song"></p>
+          </div>
+           <!--END INFOS-->
           <div id="my_player_custom" class="my_player" data-player="custom" data-streamurl="https://myradio24.org/tamburica"></div>
   
           <div id="my_player_custom_html" style="display:none;" data-imagesurl="{'play':'https://myradio24.com/player/demo/play.png','pause':'https://myradio24.com/player/demo/pause.png'} ">
@@ -383,6 +382,22 @@
     
     <!--SCRIPT-->
     <script>
+
+      $('.navToogle').on('click', function(){
+        $('html').toogleClass('nav-open');
+      })
+
+        window.addEventListener("scroll", function(event){
+          var scroll = this.scrollY;
+          if(scroll > 250) {
+            document.getElementById("headercolor").style.opacity = "1";
+            
+          } else {
+            document.getElementById("headercolor").style.opacity = "0";
+          }
+          
+        });
+    
 
       // GLAVNI MENI//
 
